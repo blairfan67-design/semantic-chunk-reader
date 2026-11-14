@@ -1,0 +1,11 @@
+# TODO (backend): replace these with 10-15 real paragraphs from news, opinion and science articles.
+# Separate paragraphs with a blank line. Lines starting with # are labels/comments.
+
+# news (made-up example)
+The city council voted 7 to 2 on Monday to expand the downtown bike lane network. The plan adds twelve miles of protected lanes over three years. Supporters cited a 40 percent rise in cycling since 2022, while two council members argued the money should go to road repair instead.
+
+# opinion (made-up example)
+Remote work is not killing productivity; bad management is. Studies that show declines usually measure hours online rather than work finished. Of course, some jobs genuinely need people in the same room, and pretending otherwise helps no one.
+
+# science (made-up example)
+Researchers have found that octopuses change color even while asleep. In a study of four animals, skin patterns during quiet sleep differed from those during active sleep. The team suggests this may resemble dreaming, though they caution that the sample was small.

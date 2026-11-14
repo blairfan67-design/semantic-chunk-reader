@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Semantic Chunk Reader</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <!-- PLACEHOLDER UI: the UI/frontend teammate owns this file and can redesign freely.
+       Keep the element ids (or update sidepanel.js to match). -->
+  <header>
+    <h1>Chunk Reader</h1>
+    <span id="backend-status" class="pill" title="Backend status">checking…</span>
+  </header>
+
+  <section class="controls">
+    <button id="analyze" class="primary">Highlight this article</button>
+    <label class="toggle">
+      <input type="checkbox" id="visible" checked>
+      <span>Show highlights</span>
+    </label>
+  </section>
+
+  <p id="status" class="status" aria-live="polite"></p>
+
+  <section>
+    <h2>Colors</h2>
+    <ul id="legend" class="legend"></ul>
+    <button id="reset-colors" class="link">Reset colors</button>
+  </section>
+
+  <p class="hint">Tip: click a highlighted sentence to see its backbone.</p>
+
+  <details class="debug">
+    <summary>Debug</summary>
+    <button id="ping">Ping page</button>
+    <button id="clear">Clear highlights</button>
+  </details>
+
+  <script src="../shared/roles.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

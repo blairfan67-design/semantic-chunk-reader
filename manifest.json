@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Semantic Chunk Reader",
+  "version": "0.1.0",
+  "description": "Highlights the key points of any article, color-coded by role.",
+  "permissions": ["sidePanel", "storage", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Semantic Chunk Reader"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["lib/Readability.js", "shared/roles.js", "highlight.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

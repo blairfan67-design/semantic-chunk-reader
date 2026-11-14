@@ -1,0 +1,22 @@
+/* Injected into every page. Keep selectors prefixed with scr- so we never clash with the site. */
+mark.scr-hl {
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+/* Role colors come from CSS variables set by content.js from the user's saved colors.
+   color-mix keeps the color light so text stays readable. */
+mark.scr-hl[data-scr-role="main"]       { background-color: color-mix(in srgb, var(--scr-color-main) 45%, transparent); }
+mark.scr-hl[data-scr-role="evidence"]   { background-color: color-mix(in srgb, var(--scr-color-evidence) 45%, transparent); }
+mark.scr-hl[data-scr-role="background"] { background-color: color-mix(in srgb, var(--scr-color-background) 45%, transparent); }
+mark.scr-hl[data-scr-role="counter"]    { background-color: color-mix(in srgb, var(--scr-color-counter) 45%, transparent); }
+
+html.scr-hidden mark.scr-hl { background-color: transparent !important; cursor: auto; }
+
+/* "Backbone" view after clicking a highlight */
+mark.scr-hl .scr-core   { font-weight: 700; }
+mark.scr-hl .scr-faded  { opacity: 0.45; }
+mark.scr-hl.scr-loading { outline: 1px dashed currentColor; }
